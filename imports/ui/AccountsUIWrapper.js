@@ -9,6 +9,7 @@ export default class AccountsUIWrapper extends Component {
     this.view = Blaze.render(Template.loginButtons,
       ReactDOM.findDOMNode(this.refs.container));
   }
+  //Se le puede poner un padding para que no se vea tan a la esquina :) o agregarlo al nav
   componentWillUnmount() {
     // Clean up Blaze view
     Blaze.remove(this.view);
